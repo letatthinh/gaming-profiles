@@ -15,7 +15,7 @@ Additional cleaning by: Tara Jacobsen and Thihn Le
 
 ## Playstation
 
-### Achievements
+### achievements
 | Column | The column indicates... | Data Type... |
 |----------|----------|----------|
 | `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer | 
@@ -24,7 +24,7 @@ Additional cleaning by: Tara Jacobsen and Thihn Le
 | `description` | description of how to unlock the achievement | string |
 | `rarity` | value of the achievement received | string |
 
-### Games 
+### `games` 
 | Column | The column indicates... | Data Type... |
 |----------|----------|----------|
 | `gameid` | unique gameID on the PlayStation platform | integer |
@@ -34,4 +34,47 @@ Additional cleaning by: Tara Jacobsen and Thihn Le
 | `publishers` | a list of publishers | list |
 | `genres` | a list of game genres | list |
 | `supported_languages` | languages available in the game as subtitles or voice-over | list |
-| `release_date` | game release date | datetime.date |
+| `release_date` | game release date | string/datetime.date |
+
+### `history`
+| Column | The column indicates... | Data Type... |
+|----------|----------|----------|
+| `playerid` | unique userID on the PlayStation platform who earned achievementID | integer |
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer |
+| `date_acquired` | timestamp of when the achievement was earned | string/datetime |
+
+### `players`
+| Column | The column indicates... | Data Type... |
+|----------|----------|----------|
+| `playerid` | unique userID on the PlayStation platform | integer |
+| `nickname` | user nickanme | string |
+| `country` | the country in which the user resides | string |
+
+### `prices`
+| Column | The column indicates... | Data Type... |
+|----------|----------|----------|
+| `gameid` | unique gameID on the PlayStation platform | integer |
+| `usd` | game price in USD | float |
+| `eur` | game price in EUR | float |
+| `gbp` | game price in GBP | float |
+| `jpy` | game price in JPY | float |
+| `rub` | game price in RUB | float |
+| `date_acquired` | date of when the price information was recorded | string/datetime.date |
+
+### `purchased_games`
+| Column | The column indicates... | Data Type... |
+|----------|----------|----------|
+| `playerid` | unique userID on the PlayStation platform | integer |
+| `library` | a list of purchased games for the entire usage period | list |
+
+## Steam
+
+### achievements
+| Column | The column indicates... | Data Type... |
+|----------|----------|----------|
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | check | 
+| `gameid` | unique gameID on the Steam platform | integer |
+| `title` |  achievement title | string |
+| `description` | description of how to unlock the achievement | string |
+
+
