@@ -3,7 +3,7 @@ Title: Gaming Profiles 2025 (Steam, PlayStation, Xbox)
 
 Author: Artyom Kruglov on Kaggle https://www.kaggle.com/datasets/artyomkruglov/gaming-profiles-2025-steam-playstation-xbox
 
-Additional cleaning by: Thihn Le and Tara Jacobsen
+Additional cleaning by: Thinh Le and Tara Jacobsen
 
 # Data Overview
 
