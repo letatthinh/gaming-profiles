@@ -59,7 +59,7 @@ Additional cleaning by: Tara Jacobsen and Thihn Le
 | `gbp` | game price in GBP | float |
 | `jpy` | game price in JPY | float |
 | `rub` | game price in RUB | float |
-| `date_acquired` | date of when the price information was recorded | string/datetime.date |
+| `date_acquired` | date of when the price information was recorded | string/datetime.date (check) |
 
 ### `purchased_games`
 | Column | Description | Data Type... |
@@ -69,12 +69,35 @@ Additional cleaning by: Tara Jacobsen and Thihn Le
 
 ## Steam
 
-### achievements
+### `achievements`
 | Column | Description | Data Type... |
 |----------|----------|----------|
-| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | check | 
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | (check) | 
 | `gameid` | unique gameID on the Steam platform | integer |
 | `title` |  achievement title | string |
 | `description` | description of how to unlock the achievement | string |
 
+### `friends`
+| Column | Description | Data Type... |
+|----------|----------|----------|
+| `playerid` | unique userID on the Steam platform | integer | 
+| `friends` | a list of user friendships | list |
 
+### `games` 
+| Column | Description | Data Type... |
+|----------|----------|----------|
+| `gameid` | unique gameID on the Steam platform | integer |
+| `title` | full title of the game | string |
+| `platform` | the platform the game was released on | string |
+| `developers` | a list of developers | list |
+| `publishers` | a list of publishers | list |
+| `genres` | a list of game genres | list |
+| `supported_languages` | languages available in the game as subtitles or voice-over | list |
+| `release_date` | game release date | string/datetime.date (check) |
+
+### `history`
+| Column | Description | Data Type... |
+|----------|----------|----------|
+| `playerid` | unique userID on the Steam platform who earned achievementID | integer |
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | (check) |
+| `date_acquired` | timestamp of when the achievement was earned | string/datetime (check) |
