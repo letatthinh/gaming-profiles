@@ -18,7 +18,7 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 ### achievements
 | Column | Description | Data Type... |
 |----------|----------|----------|
-| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer | 
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer (check) | 
 | `gameid` | unique gameID on the PlayStation platform | integer |
 | `title` |  achievement title | string |
 | `description` | description of how to unlock the achievement | string |
@@ -34,7 +34,7 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 | `publishers` | a list of publishers | list |
 | `genres` | a list of game genres | list |
 | `supported_languages` | languages available in the game as subtitles or voice-over | list |
-| `release_date` | game release date | string/datetime.date |
+| `release_date` | game release date | string/datetime.date (check) |
 
 ### `history`
 | Column | Description | Data Type... |
@@ -171,7 +171,7 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 | Column | Description | Data Type... |
 |----------|----------|----------|
 | `playerid` | unique userID on the Xbox platform who earned achievementID | integer |
-| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer |
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer (check) |
 | `date_acquired` | timestamp of when the achievement was earned | string/datetime (check) |
 
 ### `players`
