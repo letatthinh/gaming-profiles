@@ -5,6 +5,10 @@ Author: Artyom Kruglov on Kaggle https://www.kaggle.com/datasets/artyomkruglov/g
 
 Additional cleaning by: Thinh Le and Tara Jacobsen
 
+PowerBI file: TBD
+
+Dashboard url: TBD
+
 # Data Overview
 
 "This dataset was created for a comprehensive analysis of gaming platforms, user behavior, and pricing trends. It brings together real-world data from Steam, PlayStation, and Xbox, allowing researchers, analysts, and developers to explore player activity, game popularity, and price dynamics. The dataset enables insights into game market trends." (Kruglov). 
