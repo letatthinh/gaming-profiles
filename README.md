@@ -9,41 +9,43 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 
 "This dataset was created for a comprehensive analysis of gaming platforms, user behavior, and pricing trends. It brings together real-world data from Steam, PlayStation, and Xbox, allowing researchers, analysts, and developers to explore player activity, game popularity, and price dynamics. The dataset enables insights into game market trends." (Kruglov). 
 
-
-
 # Column Descriptions
 
 ## Playstation
 
-### achievements
+### `achievements`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
-| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer (check) | 
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer | 
 | `gameid` | unique gameID on the PlayStation platform | integer |
 | `title` |  achievement title | string |
 | `description` | description of how to unlock the achievement | string |
 | `rarity` | value of the achievement received | string |
 
 ### `games` 
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `gameid` | unique gameID on the PlayStation platform | integer |
 | `title` | full title of the game | string |
 | `platform` | the platform the game was released on | string |
-| `developers` | a list of developers | list |
-| `publishers` | a list of publishers | list |
-| `genres` | a list of game genres | list |
-| `supported_languages` | languages available in the game as subtitles or voice-over | list |
-| `release_date` | game release date | string/datetime.date (check) |
+| `developers` | a list of developers | string |
+| `publishers` | a list of publishers | string |
+| `genres` | a list of game genres | string |
+| `supported_languages` | languages available in the game as subtitles or voice-over | string |
+| `release_date` | game release date | datetime |
 
 ### `history`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the PlayStation platform who earned achievementID | integer |
 | `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer |
-| `date_acquired` | timestamp of when the achievement was earned | string/datetime |
+| `date_acquired` | timestamp of when the achievement was earned | datetime |
 
 ### `players`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the PlayStation platform | integer |
@@ -51,6 +53,7 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 | `country` | the country in which the user resides | string |
 
 ### `prices`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `gameid` | unique gameID on the PlayStation platform | integer |
@@ -59,57 +62,64 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 | `gbp` | game price in GBP | float |
 | `jpy` | game price in JPY | float |
 | `rub` | game price in RUB | float |
-| `date_acquired` | date of when the price information was recorded | string/datetime.date (check) |
+| `date_acquired` | date of when the price information was recorded | datetime |
 
 ### `purchased_games`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the PlayStation platform | integer |
-| `library` | a list of purchased games for the entire usage period | list |
+| `library` | a list of purchased games for the entire usage period | string |
 
 ## Steam
 
 ### `achievements`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
-| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | (check) | 
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | string | 
 | `gameid` | unique gameID on the Steam platform | integer |
 | `title` |  achievement title | string |
 | `description` | description of how to unlock the achievement | string |
 
 ### `friends`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the Steam platform | integer | 
-| `friends` | a list of user friendships | list |
+| `friends` | a list of user friendships | string |
 
-### `games` 
+### `games`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `gameid` | unique gameID on the Steam platform | integer |
 | `title` | full title of the game | string |
 | `platform` | the platform the game was released on | string |
-| `developers` | a list of developers | list |
-| `publishers` | a list of publishers | list |
-| `genres` | a list of game genres | list |
-| `supported_languages` | languages available in the game as subtitles or voice-over | list |
-| `release_date` | game release date | string/datetime.date (check) |
+| `developers` | a list of developers | string |
+| `publishers` | a list of publishers | string |
+| `genres` | a list of game genres | string |
+| `supported_languages` | languages available in the game as subtitles or voice-over | string |
+| `release_date` | game release date | datetime |
 
 ### `history`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the Steam platform who earned achievementID | integer |
-| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | (check) |
-| `date_acquired` | timestamp of when the achievement was earned | string/datetime (check) |
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | string |
+| `date_acquired` | timestamp of when the achievement was earned | datetime |
 
 ### `players`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the Steam platform | integer |
 | `country` | the country in which the user resides | string |
-| `created` | date of creation of the gaming profile | string/datetime (check) |
+| `created` | date of creation of the gaming profile | datetime |
 
 ### `prices`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `gameid` | unique gameID on the Steam platform | integer |
@@ -118,20 +128,23 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 | `gbp` | game price in GBP | float |
 | `jpy` | game price in JPY | float |
 | `rub` | game price in RUB | float |
-| `date_acquired` | date of when the price information was recorded | string/datetime.date (check) |
+| `date_acquired` | date of when the price information was recorded | datetime |
 
 ### `private_steamids`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID with hidden profiles on Steam platform | integer |
 
 ### `purchased_games`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the Steam platform | integer |
-| `library` | a list of purchased games for the entire usage period | list |
+| `library` | a list of purchased games for the entire usage period | string |
 
 ### `reviews`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `reviewid` | unique reviewID (Serial Key) | integer |
@@ -141,46 +154,51 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 | `helpful` | number of users who found the review helpful | integer |
 | `funny` | number of users who found the review funny | integer |
 | `awards` | number of awards given to the review | integer |
-| `posdted` | timestamp of when the review was posted | datetime.date (check) |
+| `posdted` | timestamp of when the review was posted | datetime |
 
 
 ## Xbox
 
-### achievements
+### `achievements`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
-| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer | 
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | string | 
 | `gameid` | unique gameID on the Xbox platform | integer |
 | `title` |  achievement title | string |
 | `description` | description of how to unlock the achievement | string |
 | `point` | number of points awarded for earning the achievement | float |
 
-### `games` 
+### `games`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `gameid` | unique gameID on the Xbox platform | integer |
 | `title` | full title of the game | string |
 | `platform` | the platform the game was released on | string |
-| `developers` | a list of developers | list |
-| `publishers` | a list of publishers | list |
-| `genres` | a list of game genres | list |
-| `supported_languages` | languages available in the game as subtitles or voice-over | list |
-| `release_date` | game release date | string/datetime.date (check) |
+| `developers` | a list of developers | string |
+| `publishers` | a list of publishers | string |
+| `genres` | a list of game genres | string |
+| `supported_languages` | languages available in the game as subtitles or voice-over | string |
+| `release_date` | game release date | datetime |
 
 ### `history`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the Xbox platform who earned achievementID | integer |
-| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | integer (check) |
-| `date_acquired` | timestamp of when the achievement was earned | string/datetime (check) |
+| `achievementid` | unique achievementID, constructed as gameID + '_' + achievementNotUniqueID | string |
+| `date_acquired` | timestamp of when the achievement was earned | datetime |
 
 ### `players`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the PlayStation platform | integer |
 | `nickname` | user nickanme | string |
 
 ### `prices`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `gameid` | unique gameID on the Xbox platform | integer |
@@ -189,12 +207,13 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 | `gbp` | game price in GBP | float |
 | `jpy` | game price in JPY | float |
 | `rub` | game price in RUB | float |
-| `date_acquired` | date of when the price information was recorded | string/datetime.date (check) |
+| `date_acquired` | date of when the price information was recorded | datetime |
 
 ### `purchased_games`
+
 | Column | Description | Data Type |
 |----------|----------|----------|
 | `playerid` | unique userID on the Xbox platform | integer |
-| `library` | a list of purchased games for the entire usage period | list |
+| `library` | a list of purchased games for the entire usage period | string |
 
 
