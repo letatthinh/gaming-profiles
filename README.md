@@ -7,7 +7,7 @@ Additional cleaning by: Thinh Le and Tara Jacobsen
 
 PowerBI file: TBD
 
-Dashboard url: TBD
+Dashboard url: https://app.powerbi.com/groups/me/reports/89bd4353-9158-47a8-973d-e5fc4470cd43?pbi_source=desktop
 
 # Data Overview
 
