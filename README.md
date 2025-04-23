@@ -5,9 +5,9 @@ Author: Artyom Kruglov on Kaggle https://www.kaggle.com/datasets/artyomkruglov/g
 
 Additional cleaning by: Thinh Le and Tara Jacobsen
 
-PowerBI file: TBD
+PowerBI file: https://drive.google.com/file/d/1lr2TcnOUSgiD-cM7aFMa8bU_1oEDca1F/view?usp=sharing
 
-Dashboard url: https://app.powerbi.com/groups/me/reports/89bd4353-9158-47a8-973d-e5fc4470cd43?pbi_source=desktop
+Dashboard url: https://app.powerbi.com/links/UpfI5J1SWn?ctid=bb0fe58b-be24-419c-b689-7b624bae76d8&pbi_source=linkShare
 
 # Data Overview
 
