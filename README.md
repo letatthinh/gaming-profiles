@@ -9,6 +9,8 @@ PowerBI file: https://drive.google.com/file/d/1lr2TcnOUSgiD-cM7aFMa8bU_1oEDca1F/
 
 Dashboard url: https://app.powerbi.com/links/UpfI5J1SWn?ctid=bb0fe58b-be24-419c-b689-7b624bae76d8&pbi_source=linkShare
 
+Presentation url: https://docs.google.com/presentation/d/1HE57_e19hRmgc-AGhAY96G9wcbpy8MAtlGtvoBqzkpA/edit?usp=sharing 
+
 # Data Overview
 
 "This dataset was created for a comprehensive analysis of gaming platforms, user behavior, and pricing trends. It brings together real-world data from Steam, PlayStation, and Xbox, allowing researchers, analysts, and developers to explore player activity, game popularity, and price dynamics. The dataset enables insights into game market trends." (Kruglov). 
