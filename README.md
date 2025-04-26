@@ -5,11 +5,11 @@ Author: Artyom Kruglov on Kaggle https://www.kaggle.com/datasets/artyomkruglov/g
 
 Additional cleaning by: Thinh Le and Tara Jacobsen
 
-PowerBI file: https://drive.google.com/file/d/1lr2TcnOUSgiD-cM7aFMa8bU_1oEDca1F/view?usp=sharing
-
 Dashboard url: https://app.powerbi.com/links/UpfI5J1SWn?ctid=bb0fe58b-be24-419c-b689-7b624bae76d8&pbi_source=linkShare
 
 Presentation url: https://docs.google.com/presentation/d/1HE57_e19hRmgc-AGhAY96G9wcbpy8MAtlGtvoBqzkpA/edit?usp=sharing 
+
+PowerBI file: https://drive.google.com/file/d/1lr2TcnOUSgiD-cM7aFMa8bU_1oEDca1F/view?usp=sharing
 
 Cleaned data: https://drive.google.com/drive/folders/1yPKENZmfXokdhLorBTYNetdhCTc-SI7I?usp=sharing
 
